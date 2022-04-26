@@ -18,11 +18,11 @@ void Chatroom::list_users(char chat_typ[5])
         int x;
         cout << "please enter the number of users ";
         cin >> x;
-        list<user>used;
+        list<user>used[256];
         for (int i = 0; i < x; i++)
         {
              user use;
-             used.push_front(use);
+             used[i].push_front(use);
         }
     }
     else
