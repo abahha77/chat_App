@@ -5,7 +5,6 @@
 using namespace std;
 void Chatroom::list_users(char chat_typ[5])
 {
-    list<user>users;
     if (chat_typ == "two")
     {
         list<user>myusers[1];
