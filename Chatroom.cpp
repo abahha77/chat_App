@@ -10,7 +10,7 @@ void Chatroom::list_users(char chat_typ[5])
         list<user>myusers[1];
         for (int x = 0; x < 2; x++) {
             user use1;
-            myusers[1].push_front(use1);
+            myusers[x].push_front(use1);
         }
     }
     else if(chat_typ == "more")
