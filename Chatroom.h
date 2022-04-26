@@ -15,6 +15,8 @@ public:
 	
 
 };
+class Chat_room_info {
+   
 
-
+};
 
