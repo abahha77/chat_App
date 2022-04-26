@@ -3,13 +3,15 @@
 #include "Message.h"
 #include <list>
 using namespace std;
-void Chatroom::list_users(char chat_typ[10])
+void Chatroom::list_users(char chat_typ[5])
 {
     list<string>users;
     if (chat_typ == "two")
     {
+        list<user>myusers[2];
         for (int x = 0; x < 2; x++) {
-            user<string>use;
+            user use1;
+            myusers[2].push_front(use1);
         }
     }
     else if(chat_typ == "more")
@@ -17,10 +19,11 @@ void Chatroom::list_users(char chat_typ[10])
         int x;
         cout << "please enter the number of users ";
         cin >> x;
+        list<user>used;
         for (int i = 0; i < x; i++)
         {
-            user<string>use;
-            users = {"use"};
+             user use;
+             used.push_front(use);
         }
     }
     else
@@ -35,3 +38,4 @@ void Chatroom::list_message()
     Message mess;
     list<Message>message;
 }
+
